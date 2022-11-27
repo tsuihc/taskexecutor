@@ -1,0 +1,10 @@
+.idea
+/target
+*.iml
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+.DS_Store
