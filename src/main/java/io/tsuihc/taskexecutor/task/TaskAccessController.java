@@ -6,12 +6,20 @@ import java.util.List;
 
 public interface TaskAccessController {
 
-    void saveTask(Task task);
+  void saveTask(Task task);
 
-    List<Task> findExecutableTasks();
+  List<Task> findExecutableTasks();
 
-    int updateProcessing(Long taskId, Boolean processing, Long expectLastAccessTime, Long setLastAccessTime);
+  int updateProcessing(
+    Long taskId,
+    Boolean processing,
+    Long expectLastAccessTime,
+    Long setLastAccessTime
+  );
 
-    void updateStatus(Long taskId, Integer status);
+  void updateStatus(
+    Long taskId,
+    Integer status
+  );
 
 }

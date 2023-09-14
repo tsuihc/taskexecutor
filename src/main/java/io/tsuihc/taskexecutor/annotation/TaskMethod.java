@@ -8,8 +8,8 @@ import java.lang.annotation.RetentionPolicy;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface TaskMethod {
 
-    TaskType type() default TaskType.NORMAL;
+  TaskType type() default TaskType.NORMAL;
 
-    Class<? extends Throwable>[] retryExceptions() default {};
+  Class<? extends Throwable>[] retryExceptions() default {};
 
 }

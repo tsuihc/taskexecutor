@@ -4,15 +4,15 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public enum TaskStatus {
-    RUNNING(0),
-    SUCCESS(1),
-    FAILED(2),
-    TIMEOUT(3),
-    ;
+  RUNNING(0),
+  SUCCESS(1),
+  FAILED(2),
+  TIMEOUT(3),
+  ;
 
-    private final int code;
+  private final int code;
 
-    public int code() {
-        return code;
-    }
+  public int code() {
+    return code;
+  }
 }
